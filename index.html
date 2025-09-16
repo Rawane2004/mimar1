@@ -7,13 +7,14 @@
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  
 </head>
 <body>
   <!-- Navbar -->
   <header class="navbar">
     <div class="container nav-container">
       <div class="logo">
-        <img src="logo.png" alt="Mimar Logo"/>
+        <img src="mimar_-logo.jpeg" alt="Mimar Logo"/>
         <span>Mimar</span>
       </div>
       <nav class="nav-links">
@@ -24,13 +25,10 @@
         <a href="#" data-i18n="profile">Profile</a>
       </nav>
       <div class="nav-actions">
-        <div class="dropdown">
-          <button class="dropbtn"><i class="fa-solid fa-globe"></i></button>
-          <div class="dropdown-content">
-            <a href="#" id="btn-en">EN</a>
-            <a href="#" id="btn-ar">AR</a>
-          </div>
-        </div>
+        <button class="lang-toggle" id="lang-toggle">
+          <i class="fa-solid fa-globe"></i>
+          <span id="lang-text">EN</span>
+        </button>
         <a href="#" class="btn-login" data-i18n="login">Login</a>
       </div>
     </div>
@@ -53,7 +51,7 @@
         </div>
       </div>
       <div class="hero-image">
-        <img src="construction.jpg" alt="Construction"/>
+        <img src="hero-construction-CMNyidZq.jpg" alt="Construction"/>
       </div>
     </div>
   </section>
@@ -88,14 +86,22 @@
       </p>
       <div class="cards">
         <div class="card">
-          <img src="contractor1.jpg" alt="Contractor"/>
+          <img src="contractorname.jpg" alt="Contractor"/>
           <h3>Ahmed Ali</h3>
           <p>Residential Contractor - Riyadh</p>
           <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
           <button class="btn-primary" data-i18n="viewDetails">View Details</button>
         </div>
+
         <div class="card">
-          <img src="contractor2.jpg" alt="Contractor"/>
+          <img src="contractorname.jpg" alt="Contractor"/>
+          <h3>Badr ali</h3>
+          <p>Residential Contractor - Riyadh</p>
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+          <button class="btn-primary" data-i18n="viewDetails">View Details</button>
+        </div>
+        <div class="card">
+          <img src="contractorname.jpg" alt="Contractor"/>
           <h3>Mohammed Saleh</h3>
           <p>Commercial Contractor - Jeddah</p>
           <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -114,14 +120,14 @@
       </p>
       <div class="cards">
         <div class="card">
-          <img src="project1.jpg" alt="Project"/>
+          <img src="projectcontrac.jpg" alt="Project"/>
           <h3>Modern Villa</h3>
           <p>By Ahmed Ali</p>
           <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
           <button class="btn-primary" data-i18n="viewDetails">View Details</button>
         </div>
         <div class="card">
-          <img src="project2.jpg" alt="Project"/>
+          <img src="projectcontrac.jpg" alt="Project"/>
           <h3>Office Tower</h3>
           <p>By Mohammed Saleh</p>
           <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -134,7 +140,7 @@
     </div>
   </section>
 
-  <!-- CTA -->
+  <!-- ✅ CTA كسكشن منفصل -->
   <section class="cta">
     <div class="container">
       <h2 data-i18n="ctaTitle">Ready to Start Your Project?</h2>
@@ -186,7 +192,5 @@
 
   <!-- Chat -->
   <div class="chat-icon"><i class="fa-solid fa-comment-dots"></i></div>
-
-  <script src="script.js"></script>
 </body>
 </html>
